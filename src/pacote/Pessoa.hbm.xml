@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2018 14:51:59 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pacote.Pessoa" table="pessoa" catalog="unicarioca" optimistic-lock="version">
+        <id name="indice" type="java.lang.Integer">
+            <column name="indice" />
+            <generator class="identity" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" length="50" not-null="false" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" not-null="false" />
+        </property>
+        <property name="cpf" type="string">
+            <column name="cpf" length="50" not-null="false" />
+        </property>
+        <property name="telefone" type="string">
+            <column name="telefone" length="50" not-null="false" />
+        </property>
+    </class>
+</hibernate-mapping>
